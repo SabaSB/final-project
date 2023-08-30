@@ -1,0 +1,24 @@
+name: Upload index.html
+
+on:
+  push:
+    branches:
+      - main  # Change this to your branch name
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Upload index.html
+        run: |
+          echo "$SSH_PRIVATE_KEY" > ssh_key
+          chmod 600 ssh_key
+
+          # Replace USERNAME, HOSTNAME, and REMOTE_PATH with your server's details
+          scp -i ssh_key index.html USERNAME@HOSTNAME:REMOTE_PATH
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
