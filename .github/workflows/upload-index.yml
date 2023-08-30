@@ -15,10 +15,10 @@ jobs:
 
       - name: Upload index.html
         run: |
-          echo "$SSH_PRIVATE_KEY" > ssh_key
-          chmod 600 ssh_key
+          echo "$SSH_PRIVATE_KEY" > ssh_key.pem
+          chmod 600 ssh_key.pem
 
           # Replace USERNAME, HOSTNAME, and REMOTE_PATH with your server's details
-          scp -i ssh_key index.html ubuntu@ec2-3-68-167-151.eu-central-1.compute.amazonaws.com:/home/ubuntu
+          scp -i ssh_key.pem index.html ubuntu@ec2-3-68-167-151.eu-central-1.compute.amazonaws.com:/home/ubuntu
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
