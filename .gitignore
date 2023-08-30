@@ -1,0 +1,5 @@
+terraform/.idea/
+terraform/.terraform/*
+terraform/*.tfstate*
+terraform/tfplan
+terraform/config/awsrc
