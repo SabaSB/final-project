@@ -19,6 +19,6 @@ jobs:
           chmod 600 ssh_key
 
           # Replace USERNAME, HOSTNAME, and REMOTE_PATH with your server's details
-          scp -i ssh_key index.html USERNAME@HOSTNAME:REMOTE_PATH
+          scp -i ssh_key index.html ubuntu@ec2-3-68-167-151.eu-central-1.compute.amazonaws.com:/home/ubuntu
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
