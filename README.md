@@ -1,5 +1,5 @@
 # final-project
-This repository is made to present the final prject which contains to make a security group & EC2 instance using terrafor, configure it by using Ansible , make an index.html file ,create a CI/CD Pipeline which takes the index file from this repository and upload it on EC2 instance.
+This repository is made to present the final prject which contains to make a security group & EC2 instance using terraform, configure it by using Ansible , make an index.html file ,create a CI/CD Pipeline which takes the index file from this repository and upload it on EC2 instance.
 
 # REQUIREMENTS:
 
@@ -26,13 +26,13 @@ Following are the requirements of the final project:
 9) A new folder named terraform has been made to place all the project's file in it.
 10) under the folder terraform, run all the files by using bash run.sh command
 11) A security group alonwith an EC2 instance has been made successfully.
-12) On github, used the method # github actions to make CI/CD pipeline.
+12) On github, used the method  github actions to make CI/CD pipeline.
 13) created a new secret key to run the pipeline.
 14) Made a thorough changes & commit the yml file.
 15) run the jobs from the actions section.
 16) upload the index.html file
-17) Taken the index.html file from repository to the server.
-18) destroyed the process with the bash run.sh destroy
+17) Took the index.html file from repository to the server.
+18) destroyed the process with the bash run.sh destroy command.
 # User Instructions:
 Launch an EC2 instance by using AWS account.
 Connect the instance with your local machine (VScode)
