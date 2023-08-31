@@ -1,4 +1,4 @@
-# final-project
+# Final-project
 This repository is made to present the final prject which contains to make a security group & EC2 instance using terraform, configure it by using Ansible , make an index.html file ,create a CI/CD Pipeline which takes the index file from this repository and upload it on EC2 instance.
 
 # REQUIREMENTS:
@@ -32,8 +32,9 @@ Following are the requirements of the final project:
 15) run the jobs from the actions section.
 16) upload the index.html file
 17) Took the index.html file from repository to the server.
-18) destroyed the process with the bash run.sh destroy command.
+18) Destroyed the process with the bash run.sh destroy command.
 # User Instructions:
+
 Launch an EC2 instance by using AWS account.
 Connect the instance with your local machine (VScode)
 Install the aws & prepare aws CLI
@@ -53,17 +54,20 @@ Create an Ansible playbook (refer ansible.yml) to install Nginx on the target ho
 Run Ansible Playbook
 sudo ansible-playbook -i hosts ansible.yml
 Verify Nginx Installation with public ip
+
 # Create a GitHub Repository 
-create a new repository & clone into your VSCode wide git clone command
+
+Create a new repository & clone into your VSCode wide git clone command
 Move all the files into the folder & then push it back onto the github.
+
 # Prepare an index.html file
 prepare the necessary html file that can upload on EC2 Instance.
+
 # Create a CI/CD Pipeline (Using GitHub Actions or Jenkins), that will take your index.html file from the repository and upload it on EC2 instance.
 For this, a yml file should be created and then commit the changes.
-Install jenkins and docker using in the instance below links
-https://www.jenkins.io/doc/book/installing/docker/#setup-wizard
-https://docs.docker.com/engine/install/ubuntu/#uninstall-docker-engine
-run the jobs to check if the pipeline is working.
+A github actions method has been used for this project.(Jenkins can also be used for this)
+Go to settings, secrets & Variable, create new Secrets & save the changes  
+Run the jobs to check if the pipeline is working.
 
 
 
