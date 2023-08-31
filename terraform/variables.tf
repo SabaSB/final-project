@@ -1,5 +1,5 @@
 variable "name_prefix" {
-  type = string
+  type    = string
   default = "dev"
 }
 
@@ -11,7 +11,7 @@ variable "rtb_id" {
   type = string
 }
 
-variable "private_network_cidr" {
+variable "public_network_cidr" {
   type = string
 }
 

@@ -9,8 +9,8 @@ data "aws_caller_identity" "current" {}
 
 locals {
   default_tags = "${map(
-        "project", "finalproject",
-        "department", "Cloud and Automation",
-        "owner", "${element(split("/",data.aws_caller_identity.current.arn),1)}"
-      )}"
+    "project", "finalproject",
+    "department", "Cloud and Automation",
+    "owner", "${element(split("/", data.aws_caller_identity.current.arn), 1)}"
+  )}"
 }

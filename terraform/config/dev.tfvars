@@ -3,7 +3,7 @@ name_prefix = "saba-shahid"  # add your full name
 vpc_id = "vpc-0c978c7db11ae32e9"
 rtb_id = "rtb-09788c316efa0013b"
 
-private_network_cidr = "172.31.128.0/18"
+public_network_cidr = "172.31.0.0/16"
 
 image = "amzn-ami-*-x86_64-gp2"
 
